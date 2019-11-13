@@ -8,3 +8,5 @@
 * _run: npm run start to begin the live developer session_
 * _if making edits to the lint or any other configuration, you will need to run another build AND another start for them to apply_
 * _when npm run start is running, it will live update. If you input other commands in the terminal it will not do anything. Control C will stop the run so you can access the terminal again_
+
+* _This version includes Jest and Babel pre-loaded_
