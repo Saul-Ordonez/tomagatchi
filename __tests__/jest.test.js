@@ -1,4 +1,7 @@
-import { MyObject } from './../src/dice-game.js'
+
+//Example testing for template//
+
+import { MyObject, MyObject2 } from './../src/dice-game.js'
 
 describe('MyObject', () => {
 
@@ -12,3 +15,26 @@ describe('MyObject', () => {
     });
 
 });
+
+describe('Numbers Multiply', () => {
+
+    test('should return the product of two numbers', () => {
+      var myObject= new MyObject(4,6,9);
+      expect(myObject.multiplyNumbers()).toEqual(24);
+
+    });
+
+});
+
+describe('Numbers Multiply', () => {
+
+    test('should return the product of two numbers', () => {
+      var myObject= new MyObject2(4,6,9);
+      expect(myObject.multiplyNumbers()).toEqual(10);
+
+    });
+
+});
+
+
+//Example testing for template//

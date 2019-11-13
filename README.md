@@ -10,3 +10,5 @@
 * _when npm run start is running, it will live update. If you input other commands in the terminal it will not do anything. Control C will stop the run so you can access the terminal again_
 
 * _This version includes Jest and Babel pre-loaded_
+
+* _To run a unit test, run: 'npm test' in command line_
