@@ -1,0 +1,46 @@
+.card-title {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+#card1{
+float: left;
+
+}
+#card2 {
+  float: right;
+}
+#playerNames {
+  text-align: center;
+  margin-bottom: 100px;
+}
+#gameTitle{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin-top: 70px;
+  padding-top: 20px;
+}
+.buttons{
+  text-align: center;
+  margin-top: 200px;
+}
+.lastRoll-currentScore{
+  text-align: center;
+
+}
+#rollHolder{
+  margin-bottom: 40px;
+
+
+}
+
+.container{
+  background-color: tan;
+  border-radius: 30px;
+}
+
+body {
+  color: red;
+}
