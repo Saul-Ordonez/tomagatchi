@@ -41,4 +41,11 @@ export class PlanetAge {
     let venusYearsLeft = venusLEB - venusAge;
     return venusYearsLeft
   }
+
+  calculateYearsLeftMars() {
+    let marsAge = parseInt(this.earthAge / 1.88);
+    let marsLEB = parseInt(this.LifeExpentancyBirth / 1.88);
+    let marsYearsLeft = marsLEB - marsAge;
+    return marsYearsLeft
+  }
 };
