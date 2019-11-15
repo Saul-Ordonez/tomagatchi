@@ -14,12 +14,12 @@ Behavior | Input | Output
 --- | --- | ---
  **User cannot input values that are not a number** | User inputs 'hello' | Error is displayed asking to type a real number
  **User cannot input values lower than 0 and higher than 120** | User inputs '-6' | Error is displayed asking user to type a number between 0 and 12
- **When all other conditions are met, user can input their age to convert to their age in Mercury years** | User inputs '32' | 'You are 7.68 Mercury years old.' is displayed
- **User can input their age to convert to their age in Venus years** | User inputs '32' | 'You are 19.84 Venus years old.' is displayed
- **User can input their age to convert to their age in Mars years** | User inputs '32' | 'You are 60.16 Mars years old.' is displayed
- **User can input their age to convert to their age in Jupiter years** | User inputs '32' | 'You are 379.52 Jupiter years old.' is displayed
- **Determines life expectancy in appropriate years for each planet** | User inputs '32' | 'You have about 24.8 Venus years left alive.' is displayed
- **If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy for each planet** | User inputs '85' | 'You have live 8.06 Venus years past your life expectancy.' is displayed
+ **When all other conditions are met, user can input their age to convert to their age in Mercury years** | User inputs '28' | 'You are 118.7 Mercury years old.' is displayed
+ **User can input their age to convert to their age in Venus years** | User inputs '28' | 'You are 46.4 Venus years old.' is displayed
+ **User can input their age to convert to their age in Mars years** | User inputs '28' | 'You are 15.2 Mars years old.' is displayed
+ **User can input their age to convert to their age in Jupiter years** | User inputs '28' | 'You are 2.41 Jupiter years old.' is displayed
+ **Determines life expectancy in appropriate years for each planet** | User inputs '28' | 'You have about 69.73 Venus years left alive.' is displayed
+ **If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy for each planet** | User inputs '85' | 'You have live 20.97 Venus years past your life expectancy.' is displayed
  <!-- **User can input their age to convert to their age in Saturn years** | User inputs '32' | 'You are 60.16 Saturn years old.' is displayed
  **User can input their age to convert to their age in Uranus years** | User inputs '32' | 'You are 60.16 Uranus years old.' is displayed
  **User can input their age to convert to their age in Neptune years** | User inputs '32' | 'You are 60.16 Neptune years old.' is displayed -->
