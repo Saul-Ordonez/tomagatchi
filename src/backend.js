@@ -71,4 +71,15 @@ export class PlanetAge {
       console.log("You're not old enough!");
     }
   }
+
+  calculateVenusOverLEB() {
+    if (this.earthAge > 72) {
+      this.venusAge = parseInt(this.earthAge / 0.62);
+      this.venusLEB = parseInt(this.lifeExpentancyBirth / 0.62);
+      let venusYearsOver = this.venusAge - this.venusLEB;
+      return venusYearsOver;
+    } else {
+      console.log("You're not old enough!");
+    }
+  }
 };
