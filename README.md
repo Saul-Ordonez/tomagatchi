@@ -21,6 +21,8 @@ Behavior | Input | Output
  <!-- **User can input their age to convert to their age in Saturn years** | User inputs '32' | 'You are 60.16 Saturn years old.' is displayed
  **User can input their age to convert to their age in Uranus years** | User inputs '32' | 'You are 60.16 Uranus years old.' is displayed
  **User can input their age to convert to their age in Neptune years** | User inputs '32' | 'You are 60.16 Neptune years old.' is displayed -->
+ **Determines life expectancy in appropriate years for each planet** | User inputs '32' | 'You have about 24.8 Venus years left alive.' is displayed
+ **If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy for each planet** | User inputs '85' | 'You have live 8.06 Venus years past your life expectancy.' is displayed
 
 ## Setup/Installation Requirements
 
