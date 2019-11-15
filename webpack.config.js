@@ -18,7 +18,7 @@ module.exports = {
   new UglifyJsPlugin({ sourceMap: true }),
   new CleanWebpackPlugin(),
   new HtmlWebpackPlugin({
-    title: 'Dice Game',
+    title: 'Galaxy Age Calculator',
     template: './src/index.html',
     inject: 'body'
   })
