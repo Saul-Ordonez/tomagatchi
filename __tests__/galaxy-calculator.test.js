@@ -33,38 +33,14 @@ describe('Planet Years Left', () => {
 
 });
 
-describe('Mercury Years Over', () => {
+describe('Planet Years Over LEB', () => {
 
-    test('should return users years over the LEB for Mercury', () => {
-      let mercuryYearsOver = new PlanetAge(85);
-      expect(mercuryYearsOver.calculateMercuryOverLEB()).toEqual(54);
-    });
-
-});
-
-describe('Venus Years Over', () => {
-
-    test('should return users years over the LEB for Venus', () => {
-      let venusYearsOver = new PlanetAge(85);
-      expect(venusYearsOver.calculateVenusOverLEB()).toEqual(21);
-    });
-
-});
-
-describe('Mars Years Over', () => {
-
-    test('should return users years over the LEB for Mars', () => {
-      let marsYearsOver = new PlanetAge(85);
-      expect(marsYearsOver.calculateMarsOverLEB()).toEqual(7);
-    });
-
-});
-
-describe('Jupiter Years Over', () => {
-
-    test('should return users years over the LEB for Jupiter', () => {
-      let jupiterYearsOver = new PlanetAge(85);
-      expect(jupiterYearsOver.calculateJupiterOverLEB()).toEqual(1);
+    test('should return users years over the LEB for specified planet', () => {
+      let planetYearsOver = new PlanetAge(85);
+      expect(planetYearsOver.calculateMercuryOverLEB()).toEqual(54);
+      expect(planetYearsOver.calculateVenusOverLEB()).toEqual(21);
+      expect(planetYearsOver.calculateMarsOverLEB()).toEqual(7);
+      expect(planetYearsOver.calculateJupiterOverLEB()).toEqual(1);
     });
 
 });
