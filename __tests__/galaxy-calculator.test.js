@@ -42,3 +42,11 @@ describe('Mars Years Left', () => {
       expect(marsYearsLeft.calculateYearsLeftMars()).toEqual(24);
     });
 });
+
+describe('Jupiter Years Left', () => {
+
+    test('should return users remaining years left in jupiter years', () => {
+      let jupiterYearsLeft = new PlanetAge(28);
+      expect(jupiterYearsLeft.calculateYearsLeftJupiter()).toEqual(4);
+    });
+});

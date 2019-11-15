@@ -48,4 +48,11 @@ export class PlanetAge {
     let marsYearsLeft = marsLEB - marsAge;
     return marsYearsLeft
   }
+
+  calculateYearsLeftJupiter() {
+    let jupiterAge = parseInt(this.earthAge / 11.86);
+    let jupiterLEB = parseInt(this.LifeExpentancyBirth / 11.86);
+    let jupiterYearsLeft = jupiterLEB - jupiterAge;
+    return jupiterYearsLeft
+  }
 };
