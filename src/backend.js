@@ -2,25 +2,34 @@ export class PlanetAge {
   constructor(earthAge, LifeExpentancyBirth) {
   this.earthAge = earthAge;
   this.LifeExpentancyBirth = 72;
+  this.mercuryAge = 0;
+  this.venusAge = 0;
+  this.marsAge = 0;
+  this.jupiterAge = 0;
   }
 
   calculateMercuryAge() {
-    let mercuryAge = parseInt((this.earthAge / 0.24));
-    return mercuryAge;
+    this.mercuryAge = parseInt((this.earthAge / 0.24));
+    return this.mercuryAge;
   }
 
   calculateVenusAge() {
-    let venusAge = parseInt((this.earthAge / 0.62));
-    return venusAge;
+    this.venusAge = parseInt((this.earthAge / 0.62));
+    return this.venusAge;
   }
 
   calculateMarsAge() {
-    let marsAge = parseInt((this.earthAge / 1.88));
-    return marsAge;
+    this.marsAge = parseInt((this.earthAge / 1.88));
+    return this.marsAge;
   }
 
   calculateJupiterAge() {
-    let jupiterAge = parseInt((this.earthAge / 11.86));
-    return jupiterAge;
+    this.jupiterAge = parseInt((this.earthAge / 11.86));
+    return this.jupiterAge;
+  }
+
+  calculateYearsLeftMercury() {
+    let yearsLeftMercury = parseInt((this.LifeExpentancyBirth / 0.24) - this.mercuryAge);
+    return yearsLeftMercury
   }
 };

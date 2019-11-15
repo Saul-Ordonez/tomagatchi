@@ -19,26 +19,10 @@ describe('Planet Age', () => {
     });
 });
 
-// describe('Venus Age', () => {
-//
+// describe('Mercury Years Left', () => {
+// 
 //     test('should return users age in Venus years', () => {
-//       let venusAge = new PlanetAge(28);
-//
-//     });
-// });
-//
-// describe('Mars Age', () => {
-//
-//     test('should return users age in Mars years', () => {
-//       let marsAge = new PlanetAge(28);
-//
-//     });
-// });
-//
-// describe('Jupiter Age', () => {
-//
-//     test('should return users age in Jupiter years', () => {
-//       let jupiterAge = new PlanetAge(28);
-//
+//       let mercuryYearsLeft = new PlanetAge(28);
+//       expect(mercuryYearsLeft.calculateYearsLeftMercury()).toEqual(2);
 //     });
 // });
