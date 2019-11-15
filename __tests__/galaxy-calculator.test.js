@@ -1,6 +1,6 @@
 import { PlanetAge } from './../src/backend.js'
 
-describe('PlanetAge', () => {
+describe('Planet Age', () => {
 
     test('should record the age inputted from user', () => {
       let planetAge= new PlanetAge(28);
@@ -21,5 +21,13 @@ describe('Venus Age', () => {
     test('should return users age in Venus years', () => {
       let venusAge = new PlanetAge(28);
       expect(venusAge.calculateVenusAge()).toEqual(45);
+    });
+});
+
+describe('Mars Age', () => {
+
+    test('should return users age in Mars years', () => {
+      let marsAge = new PlanetAge(28);
+      expect(marsAge.calculateMarsAge()).toEqual(14);
     });
 });
