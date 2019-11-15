@@ -93,4 +93,15 @@ export class PlanetAge {
       console.log("You're not old enough!");
     }
   }
+
+  calculateJupiterOverLEB() {
+    if (this.earthAge > 72) {
+      this.jupiterAge = parseInt(this.earthAge / 11.86);
+      this.jupiterLEB = parseInt(this.lifeExpentancyBirth / 11.86);
+      let jupiterYearsOver = this.jupiterAge - this.jupiterLEB;
+      return jupiterYearsOver;
+    } else {
+      console.log("You're not old enough!");
+    }
+  }
 };

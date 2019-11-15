@@ -59,3 +59,12 @@ describe('Mars Years Over', () => {
     });
 
 });
+
+describe('Jupiter Years Over', () => {
+
+    test('should return users years over the LEB for Jupiter', () => {
+      let jupiterYearsOver = new PlanetAge(85);
+      expect(jupiterYearsOver.calculateJupiterOverLEB()).toEqual(1);
+    });
+
+});
