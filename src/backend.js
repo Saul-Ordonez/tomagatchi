@@ -55,14 +55,20 @@ export class PlanetAge {
 
   calculateYearsLeftJupiter() {
     this.jupiterAge = parseInt(this.earthAge / 11.86);
+
     this.jupiterLEB = parseInt(this.lifeExpentancyBirth / 11.86);
     let jupiterYearsLeft = this.jupiterLEB - this.jupiterAge;
     return jupiterYearsLeft
   }
-  //
-  // calculateMercuryOverLEB() {
-  //   if (this.earthAge > 72) {
-  //     let mercuryAgeOverLEB =
-  //   }
-  // }
+
+  calculateMercuryOverLEB() {
+    if (this.earthAge > 72) {
+      this.mercuryAge = parseInt(this.earthAge / 0.24);
+      this.mercuryLEB = parseInt(this.lifeExpentancyBirth / 0.24);
+      let mercuryYearsOver = this.mercuryAge - this.mercuryLEB;
+      return mercuryYearsOver;
+    } else {
+      console.log("You're not old enough!");
+    }
+  }
 };

@@ -32,3 +32,12 @@ describe('Planet Years Left', () => {
     });
 
 });
+
+describe('Mercury Years Over', () => {
+
+    test('should return users years over the LEB for Mercury', () => {
+      let mercuryYearsOver = new PlanetAge(85);
+      expect(mercuryYearsOver.calculateMercuryOverLEB()).toEqual(54);
+    });
+
+});
