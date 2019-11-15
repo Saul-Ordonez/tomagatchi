@@ -8,4 +8,9 @@ export class PlanetAge {
     let mercuryAge = parseInt((this.earthAge / 0.24));
     return mercuryAge;
   }
+
+  calculateVenusAge() {
+    let venusAge = parseInt((this.earthAge / 0.62));
+    return venusAge;
+  }
 };
