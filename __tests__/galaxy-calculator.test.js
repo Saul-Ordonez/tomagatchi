@@ -31,3 +31,11 @@ describe('Mars Age', () => {
       expect(marsAge.calculateMarsAge()).toEqual(14);
     });
 });
+
+describe('Jupiter Age', () => {
+
+    test('should return users age in Jupiter years', () => {
+      let jupiterAge = new PlanetAge(28);
+      expect(jupiterAge.calculateJupiterAge()).toEqual(2);
+    });
+});

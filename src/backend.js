@@ -18,4 +18,9 @@ export class PlanetAge {
     let marsAge = parseInt((this.earthAge / 1.88));
     return marsAge;
   }
+
+  calculateJupiterAge() {
+    let jupiterAge = parseInt((this.earthAge / 11.86));
+    return jupiterAge;
+  }
 };
