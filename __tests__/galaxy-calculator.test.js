@@ -26,3 +26,11 @@ describe('Mercury Years Left', () => {
       expect(mercuryYearsLeft.calculateYearsLeftMercury()).toEqual(184);
     });
 });
+
+describe('Venus Years Left', () => {
+
+    test('should return users remaining years left in venus years', () => {
+      let venusYearsLeft = new PlanetAge(28);
+      expect(venusYearsLeft.calculateYearsLeftVenus()).toEqual(71);
+    });
+});
