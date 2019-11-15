@@ -1,8 +1,11 @@
-export let PlanetAge = function(earthAge) {
+export class PlanetAge {
+  constructor(earthAge, LifeExpentancyBirth) {
   this.earthAge = earthAge;
-}
+  this.LifeExpentancyBirth = 72;
+  }
 
-PlanetAge.prototype.calculateMercuryAge = function(age) {
-  let mercuryAge = (this.age / 0.24).toFixed(2);
-  return mercuryAge;
-}
+  calculateMercuryAge() {
+    let mercuryAge = parseInt((this.earthAge / 0.24));
+    return mercuryAge;
+  }
+};

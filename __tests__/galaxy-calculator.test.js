@@ -10,23 +10,16 @@ describe('PlanetAge', () => {
 
 describe('Mercury Age', () => {
 
-    test('should return users age in mercury years', () => {
+    test('should return users age in Mercury years', () => {
       let mercuryAge = new PlanetAge(28);
-      expect(mercuryAge.calculateMercuryAge()).toEqual(6.72);
-
+      expect(mercuryAge.calculateMercuryAge()).toEqual(116);
     });
-
 });
-//
-// describe('Numbers Multiply', () => {
-//
-//     test('should return the product of two numbers', () => {
-//       var myObject= new MyObject2(4,6,9);
-//       expect(myObject.multiplyNumbers()).toEqual(10);
-//
-//     });
-//
-// });
 
+describe('Venus Age', () => {
 
-//Example testing for template//
+    test('should return users age in Venus years', () => {
+      let venusAge = new PlanetAge(28);
+      expect(venusAge.calculateVenusAge()).toEqual(45);
+    });
+});
