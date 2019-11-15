@@ -3,7 +3,7 @@ import { PlanetAge } from './../src/backend.js'
 describe('Earth Age', () => {
 
     test('should record the age inputted from user', () => {
-      let planetAge= new PlanetAge(28);
+      let planetAge = new PlanetAge(28);
       expect(planetAge.earthAge).toEqual(28);
     });
 
