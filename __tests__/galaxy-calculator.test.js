@@ -50,3 +50,12 @@ describe('Venus Years Over', () => {
     });
 
 });
+
+describe('Mars Years Over', () => {
+
+    test('should return users years over the LEB for Mars', () => {
+      let marsYearsOver = new PlanetAge(85);
+      expect(marsYearsOver.calculateMarsOverLEB()).toEqual(7);
+    });
+
+});

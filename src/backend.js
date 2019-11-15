@@ -82,4 +82,15 @@ export class PlanetAge {
       console.log("You're not old enough!");
     }
   }
+
+  calculateMarsOverLEB() {
+    if (this.earthAge > 72) {
+      this.marsAge = parseInt(this.earthAge / 1.88);
+      this.marsLEB = parseInt(this.lifeExpentancyBirth / 1.88);
+      let marsYearsOver = this.marsAge - this.marsLEB;
+      return marsYearsOver;
+    } else {
+      console.log("You're not old enough!");
+    }
+  }
 };
