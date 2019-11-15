@@ -12,11 +12,15 @@ This webpage application will allow users input their age in years and return a 
 
 Behavior | Input | Output
 --- | --- | ---
- **Radio Button for size of pizza is assigned pre-determined price value** | User selects '10"' button | data is converted to price of $10
- **Radio Button for crust type is assigned pre-determined price value** | User selects 'Deep Dish' | Data is updated to store a total price of $12
- **Checkbox buttons for toppings are all given value and assigned price values depending on the number chosen** | User selects 'pepperoni and olive' toppings | Data is updated to store a total price of $14 ($1 for each topping)
- **Checkbox buttons for dipping sauces are all given values and assigned price values depending on the number chosen** | User selects 'ranch' dipping sauce | Data is updated to sore a total price of $15 ($1 for each dipping sauce)
- **Submit button gathers value for total price and displays accordingly** | User clicks 'Get your total' button | Application displays order confirmation text with total price and each selected item
+ **User cannot input values that are not a number** | User inputs 'hello' | Error is displayed asking to type a real number
+ **User cannot input values lower than 0 and higher than 120** | User inputs '-6' | Error is displayed asking user to type a number between 0 and 12
+ **When all other conditions are met, user can input their age to convert to their age in Mercury years** | User inputs '32' | 'You are 7.68 Mercury years old.' is displayed
+ **User can input their age to convert to their age in Venus years** | User inputs '32' | 'You are 19.84 Venus years old.' is displayed
+ **User can input their age to convert to their age in Mars years** | User inputs '32' | 'You are 60.16 Mars years old.' is displayed
+ **User can input their age to convert to their age in Jupiter years** | User inputs '32' | 'You are 379.52 Jupiter years old.' is displayed
+ <!-- **User can input their age to convert to their age in Saturn years** | User inputs '32' | 'You are 60.16 Saturn years old.' is displayed
+ **User can input their age to convert to their age in Uranus years** | User inputs '32' | 'You are 60.16 Uranus years old.' is displayed
+ **User can input their age to convert to their age in Neptune years** | User inputs '32' | 'You are 60.16 Neptune years old.' is displayed -->
 
 ## Setup/Installation Requirements
 
@@ -44,6 +48,7 @@ If there are any issues or bugs the developer may not be aware of please contact
 
 * HTML
 * Javascript
+* NPM Webpack
 * CSS
 * jQuery
 * Bootstrap
