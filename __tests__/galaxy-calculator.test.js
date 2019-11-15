@@ -10,7 +10,7 @@ describe('Earth Age', () => {
 
 describe('Planet Age', () => {
 
-    test('should return users age in Mercury years', () => {
+    test('should return users age in specified planet years', () => {
       let planetAge = new PlanetAge(28);
       expect(planetAge.calculateMercuryAge()).toEqual(116);
       expect(planetAge.calculateVenusAge()).toEqual(45);
@@ -19,10 +19,10 @@ describe('Planet Age', () => {
     });
 });
 
-// describe('Mercury Years Left', () => {
-// 
-//     test('should return users age in Venus years', () => {
-//       let mercuryYearsLeft = new PlanetAge(28);
-//       expect(mercuryYearsLeft.calculateYearsLeftMercury()).toEqual(2);
-//     });
-// });
+describe('Mercury Years Left', () => {
+
+    test('should return users remaining years left in mercury years', () => {
+      let mercuryYearsLeft = new PlanetAge(28);
+      expect(mercuryYearsLeft.calculateYearsLeftMercury()).toEqual(184);
+    });
+});

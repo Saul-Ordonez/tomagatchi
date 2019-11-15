@@ -29,7 +29,9 @@ export class PlanetAge {
   }
 
   calculateYearsLeftMercury() {
-    let yearsLeftMercury = parseInt((this.LifeExpentancyBirth / 0.24) - this.mercuryAge);
-    return yearsLeftMercury
+    let mercuryAge = parseInt(this.earthAge / 0.24);
+    let mercuryLEB = parseInt(this.LifeExpentancyBirth / 0.24);
+    let mercuryYearsLeft = mercuryLEB - mercuryAge;
+    return mercuryYearsLeft
   }
 };
