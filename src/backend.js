@@ -67,8 +67,6 @@ export class PlanetAge {
       this.mercuryLEB = parseInt(this.lifeExpentancyBirth / 0.24);
       let mercuryYearsOver = this.mercuryAge - this.mercuryLEB;
       return mercuryYearsOver;
-    } else {
-      console.log("You're not old enough!");
     }
   }
 
@@ -78,8 +76,6 @@ export class PlanetAge {
       this.venusLEB = parseInt(this.lifeExpentancyBirth / 0.62);
       let venusYearsOver = this.venusAge - this.venusLEB;
       return venusYearsOver;
-    } else {
-      console.log("You're not old enough!");
     }
   }
 
@@ -89,8 +85,6 @@ export class PlanetAge {
       this.marsLEB = parseInt(this.lifeExpentancyBirth / 1.88);
       let marsYearsOver = this.marsAge - this.marsLEB;
       return marsYearsOver;
-    } else {
-      console.log("You're not old enough!");
     }
   }
 
@@ -100,8 +94,6 @@ export class PlanetAge {
       this.jupiterLEB = parseInt(this.lifeExpentancyBirth / 11.86);
       let jupiterYearsOver = this.jupiterAge - this.jupiterLEB;
       return jupiterYearsOver;
-    } else {
-      console.log("You're not old enough!");
     }
   }
 };
