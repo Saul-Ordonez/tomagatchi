@@ -1,7 +1,7 @@
 
 //Example testing for template//
 
-import { MyObject, MyObject2 } from './../src/dice-game.js'
+import { MyObject, MyObject2 } from './../src/backend.js'
 
 describe('MyObject', () => {
 
