@@ -2,14 +2,14 @@ export class PlanetAge {
   constructor(earthAge) {
     this.earthAge = earthAge;
     this.lifeExpectancyBirth = 72;
-    this.mercuryAge = 0;
-    this.venusAge = 0;
-    this.marsAge = 0;
-    this.jupiterAge = 0;
-    this.mercuryLEB = 0;
-    this.venusLEB = 0;
-    this.marsLEB = 0;
-    this.jupiterLEB = 0;
+    this.mercuryAge = this.calculateMercuryAge();
+    this.venusAge = this.calculateVenusAge();
+    this.marsAge = this.calculateMarsAge();
+    this.jupiterAge = this.calculateJupiterAge();
+    this.mercuryLEB = this.calculateYearsLeftMercury();
+    this.venusLEB = this.calculateYearsLeftVenus();
+    this.marsLEB = this.calculateYearsLeftMars();
+    this.jupiterLEB = this.calculateYearsLeftJupiter();
   }
 
   calculateMercuryAge() {
