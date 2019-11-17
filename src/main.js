@@ -11,21 +11,27 @@ $(document).ready(function() {
     const ageInput = $('#ageInput').val();
     let planetAge = new PlanetAge(ageInput);
 
+    $('#planetAge').show();
     $('#mercuryAge').text(planetAge.mercuryAge);
     $('#venusAge').text(planetAge.venusAge);
     $('#marsAge').text(planetAge.marsAge);
     $('#jupiterAge').text(planetAge.jupiterAge);
 
+    if (planetAge.earthAge <= 72) {
+      $('#planetYearsLeft').show();
+    }
     $('#yearsLeftMercury').text(planetAge.mercuryYearsLeft);
     $('#yearsLeftVenus').text(planetAge.venusYearsLeft);
     $('#yearsLeftMars').text(planetAge.marsYearsLeft);
     $('#yearsLeftJupiter').text(planetAge.jupiterYearsLeft);
 
+    if (planetAge.earthAge > 72) {
+      $('#planetYearsOver').show();
+    }
     $('#yearsOverMercury').text(planetAge.mercuryYearsOver);
     $('#yearsOverVenus').text(planetAge.venusYearsOver);
     $('#yearsOverMars').text(planetAge.marsYearsOver);
     $('#yearsOverJupiter').text(planetAge.jupiterYearsOver);
-
 
   });
 });
