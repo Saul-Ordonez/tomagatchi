@@ -16,9 +16,16 @@ $(document).ready(function() {
     $('#marsAge').text(planetAge.marsAge);
     $('#jupiterAge').text(planetAge.jupiterAge);
 
-    $('#yearsLeftMercury').text(planetAge.yearsLeftMercury);
-    $('#yearsLeftVenus').text(planetAge.yearsLeftVenus);
-    $('#yearsLeftMars').text(planetAge.yearsLeftMars);
-    $('#yearsLeftJupiter').text(planetAge.yearsLeftJupiter);
+    $('#yearsLeftMercury').text(planetAge.mercuryYearsLeft);
+    $('#yearsLeftVenus').text(planetAge.venusYearsLeft);
+    $('#yearsLeftMars').text(planetAge.marsYearsLeft);
+    $('#yearsLeftJupiter').text(planetAge.jupiterYearsLeft);
+
+    $('#yearsOverMercury').text(planetAge.mercuryYearsOver);
+    $('#yearsOverVenus').text(planetAge.venusYearsOver);
+    $('#yearsOverMars').text(planetAge.marsYearsOver);
+    $('#yearsOverJupiter').text(planetAge.jupiterYearsOver);
+
+
   });
 });

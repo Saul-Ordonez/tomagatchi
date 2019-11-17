@@ -37,10 +37,10 @@ describe('Planet Years Over LEB', () => {
 
     test('should return users years over the LEB for specified planet', () => {
       let planetYearsOver = new PlanetAge(85);
-      expect(planetYearsOver.calculateMercuryOverLEB()).toEqual(54);
-      expect(planetYearsOver.calculateVenusOverLEB()).toEqual(21);
-      expect(planetYearsOver.calculateMarsOverLEB()).toEqual(7);
-      expect(planetYearsOver.calculateJupiterOverLEB()).toEqual(1);
+      expect(planetYearsOver.calculateYearsOverMercury()).toEqual(54);
+      expect(planetYearsOver.calculateYearsOverVenus()).toEqual(21);
+      expect(planetYearsOver.calculateYearsOverMars()).toEqual(7);
+      expect(planetYearsOver.calculateYearsOverJupiter()).toEqual(1);
     });
 
 });
