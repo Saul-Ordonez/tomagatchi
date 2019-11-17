@@ -17,93 +17,93 @@ export class PlanetAge {
   }
 
   calculateMercuryAge() {
-    this.mercuryAge = parseInt(this.earthAge / 0.24);
+    this.mercuryAge = parseFloat((this.earthAge / 0.24).toFixed(2));
     return this.mercuryAge;
   }
 
   calculateVenusAge() {
-    this.venusAge = parseInt(this.earthAge / 0.62);
+    this.venusAge = parseFloat((this.earthAge / 0.62).toFixed(2));
     return this.venusAge;
   }
 
   calculateMarsAge() {
-    this.marsAge = parseInt(this.earthAge / 1.88);
+    this.marsAge = parseFloat((this.earthAge / 1.88).toFixed(2));
     return this.marsAge;
   }
 
   calculateJupiterAge() {
-    this.jupiterAge = parseInt(this.earthAge / 11.86);
+    this.jupiterAge = parseFloat((this.earthAge / 11.86).toFixed(2));
     return this.jupiterAge;
   }
 
   calculateYearsLeftMercury() {
     if (this.earthAge <= 72) {
-      this.mercuryAge = parseInt(this.earthAge / 0.24);
-      let mercuryLEB = parseInt(this.lifeExpectancyBirth / 0.24);
-      this.mercuryYearsLeft = mercuryLEB - this.mercuryAge;
+      this.mercuryAge = parseFloat(this.earthAge / 0.24);
+      let mercuryLEB = parseFloat(this.lifeExpectancyBirth / 0.24);
+      this.mercuryYearsLeft = parseFloat((mercuryLEB - this.mercuryAge).toFixed(2));
       return this.mercuryYearsLeft;
     }
   }
 
   calculateYearsLeftVenus() {
     if (this.earthAge <= 72) {
-      this.venusAge = parseInt(this.earthAge / 0.62);
-      let venusLEB = parseInt(this.lifeExpectancyBirth / 0.62);
-      this.venusYearsLeft = venusLEB - this.venusAge;
+      this.venusAge = parseFloat(this.earthAge / 0.62);
+      let venusLEB = parseFloat(this.lifeExpectancyBirth / 0.62);
+      this.venusYearsLeft = parseFloat((venusLEB - this.venusAge).toFixed(2));
       return this.venusYearsLeft;
     }
   }
 
   calculateYearsLeftMars() {
     if (this.earthAge <= 72) {
-      this.marsAge = parseInt(this.earthAge / 1.88);
-      let marsLEB = parseInt(this.lifeExpectancyBirth / 1.88);
-      this.marsYearsLeft = marsLEB - this.marsAge;
+      this.marsAge = parseFloat(this.earthAge / 1.88);
+      let marsLEB = parseFloat(this.lifeExpectancyBirth / 1.88);
+      this.marsYearsLeft = parseFloat((marsLEB - this.marsAge).toFixed(2));
       return this.marsYearsLeft;
     }
   }
 
   calculateYearsLeftJupiter() {
     if (this.earthAge <= 72) {
-      this.jupiterAge = parseInt(this.earthAge / 11.86);
-      let jupiterLEB = parseInt(this.lifeExpectancyBirth / 11.86);
-      this.jupiterYearsLeft = jupiterLEB - this.jupiterAge;
+      this.jupiterAge = parseFloat(this.earthAge / 11.86);
+      let jupiterLEB = parseFloat(this.lifeExpectancyBirth / 11.86);
+      this.jupiterYearsLeft = parseFloat((jupiterLEB - this.jupiterAge).toFixed(2));
       return this.jupiterYearsLeft;
     }
   }
 
   calculateYearsOverMercury() {
     if (this.earthAge > 72) {
-      this.mercuryAge = parseInt(this.earthAge / 0.24);
-      let mercuryLEB = parseInt(this.lifeExpectancyBirth / 0.24);
-      this.mercuryYearsOver = this.mercuryAge - mercuryLEB;
+      this.mercuryAge = parseFloat(this.earthAge / 0.24);
+      let mercuryLEB = parseFloat(this.lifeExpectancyBirth / 0.24);
+      this.mercuryYearsOver = parseFloat((this.mercuryAge - mercuryLEB).toFixed(2));
       return this.mercuryYearsOver;
     }
   }
 
   calculateYearsOverVenus() {
     if (this.earthAge > 72) {
-      this.venusAge = parseInt(this.earthAge / 0.62);
-      let venusLEB = parseInt(this.lifeExpectancyBirth / 0.62);
-      this.venusYearsOver = this.venusAge - venusLEB;
+      this.venusAge = parseFloat(this.earthAge / 0.62);
+      let venusLEB = parseFloat(this.lifeExpectancyBirth / 0.62);
+      this.venusYearsOver = parseFloat((this.venusAge - venusLEB).toFixed(2));
       return this.venusYearsOver;
     }
   }
 
   calculateYearsOverMars() {
     if (this.earthAge > 72) {
-      this.marsAge = parseInt(this.earthAge / 1.88);
-      let marsLEB = parseInt(this.lifeExpectancyBirth / 1.88);
-      this.marsYearsOver = this.marsAge - marsLEB;
+      this.marsAge = parseFloat(this.earthAge / 1.88);
+      let marsLEB = parseFloat(this.lifeExpectancyBirth / 1.88);
+      this.marsYearsOver = parseFloat((this.marsAge - marsLEB).toFixed(2));
       return this.marsYearsOver;
     }
   }
 
   calculateYearsOverJupiter() {
     if (this.earthAge > 72) {
-      this.jupiterAge = parseInt(this.earthAge / 11.86);
-      let jupiterLEB = parseInt(this.lifeExpectancyBirth / 11.86);
-      this.jupiterYearsOver = this.jupiterAge - jupiterLEB;
+      this.jupiterAge = parseFloat((this.earthAge / 11.86).toFixed(2));
+      let jupiterLEB = parseFloat((this.lifeExpectancyBirth / 11.86).toFixed(2));
+      this.jupiterYearsOver = parseFloat((this.jupiterAge - jupiterLEB).toFixed(2));
       return this.jupiterYearsOver;
     }
   }
