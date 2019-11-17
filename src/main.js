@@ -32,6 +32,5 @@ $(document).ready(function() {
     $('#yearsOverVenus').text(planetAge.venusYearsOver);
     $('#yearsOverMars').text(planetAge.marsYearsOver);
     $('#yearsOverJupiter').text(planetAge.jupiterYearsOver);
-
   });
 });
