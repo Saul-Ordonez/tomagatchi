@@ -12,10 +12,10 @@ $(document).ready(function() {
     let planetAge = new PlanetAge(ageInput);
 
     $('#planetAge').show();
-    $('#mercuryAge').text(planetAge.mercuryAge);
-    $('#venusAge').text(planetAge.venusAge);
-    $('#marsAge').text(planetAge.marsAge);
-    $('#jupiterAge').text(planetAge.jupiterAge);
+    $('#mercuryAge').text(planetAge.mercuryAge.toFixed(2));
+    $('#venusAge').text(planetAge.venusAge.toFixed(2));
+    $('#marsAge').text(planetAge.marsAge.toFixed(2));
+    $('#jupiterAge').text(planetAge.jupiterAge.toFixed(2));
 
     if (planetAge.earthAge <= 72) {
       $('#planetYearsLeft').show();
