@@ -1,0 +1,21 @@
+.jumbotron {
+  text-align: center;
+  background-color: #0B4B5A;
+}
+
+.card {
+  text-align: center;
+  margin: 100px;
+}
+
+body {
+  background-color: #317484;
+}
+
+.well {
+  background-color: #1C6171;
+}
+
+/* .gameOver {
+  display: none;
+} */

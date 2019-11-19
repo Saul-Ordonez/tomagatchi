@@ -4,31 +4,39 @@ export class Tomagatchi {
     this.hunger = 10;
     this.energy = 10;
     this.mood = 0;
+
+    this.setHunger();
+    this.setEnergy();
+    this.setMood();
+    this.gameOver();
   }
 
   setHunger() {
-    if (this.hunger > 0) {
       setInterval(() => {
-        this.hunger--;
-      }, 1000);
-    }
+        if (this.hunger > 0) {
+        this.hunger-- ;
+      }
+    }, 1000);
+
   }
 
   setEnergy() {
-    if(this.energy > 0) {
       setInterval(() => {
+        if(this.energy > 0) {
         this.energy--;
-      }, 2000);
-    }
+      }
+    }, 2000);
   }
 
   setMood() {
-    if(this.mood > 0) {
+
       setInterval(() => {
-        this.mood--;
+        if(this.mood > 0) {
+          this.mood--;
+        }
       }, 5000);
     }
-  }
+
 
   feed() {
     this.hunger = 10;
@@ -45,12 +53,14 @@ export class Tomagatchi {
   }
 
   gameOver() {
-    if (this.mood === 10) {
-      alert('You Won! Play Again?');
-    }
-    if (this.hunger < 1) {
-      alert('Your Tomagatchi is DEAD.');
-    }
+    setInterval(() => {
+      if (this.mood === 10) {
+        $('.gameOver').show();
+      }
+      if (this.hunger < 1) {
+        $('.gameOver').show();
+      }
+    }, 500);
   }
 
 }
