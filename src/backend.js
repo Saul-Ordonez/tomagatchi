@@ -7,15 +7,19 @@ export class Tomagatchi {
   }
 
   setHunger() {
-    setInterval(() => {
-      this.hunger--;
-    }, 1000);
+    if (this.hunger > 0) {
+      setInterval(() => {
+        this.hunger--;
+      }, 1000);
+    }
   }
 
   setEnergy() {
-    setInterval(() => {
-      this.energy--;
-    }, 2000);
+    if(this.energy > 0) {
+      setInterval(() => {
+        this.energy--;
+      }, 2000);
+    }
   }
 
   setMood() {

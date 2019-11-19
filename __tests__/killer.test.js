@@ -75,15 +75,8 @@ describe('Greg', () => {
   });
 
   test('should result in a game loss if hunger is at zero', ()=> {
-    jest.advanceTimersByTime(100001);
-    expect(tomagatchi.hunger).toEqual(<1);
-  })
-
-
-  // test the loss condition
-
-  // test the win
-    // don't tick the clock
-    // play til 10 mood
+    jest.advanceTimersByTime(10001);
+    expect(tomagatchi.hunger).toEqual(0);
+  });
 
 });
