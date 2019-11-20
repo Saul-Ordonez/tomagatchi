@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
 
     let request = new XMLHttpRequest();
-    const url = `https://api.giphy.com/v1/gifs/translate?api_key=Ho7J61QsxL7wbzY2CXyPYUenr8U2ixum&s=tamagotchi&weirdness=4`;
+    const url = `https://api.giphy.com/v1/gifs/translate?api_key=${process.env.API_KEY}&s=tamagotchi`;
 
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
